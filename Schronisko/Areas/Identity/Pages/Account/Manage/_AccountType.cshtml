@@ -1,0 +1,15 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Schronisko.Areas.Identity.Data
+
+@inject SignInManager<SchroniskoUser> SignInManager
+@inject UserManager<SchroniskoUser> UserManager
+
+        @if(((await UserManager.GetUserAsync(User)).IsAdmin).Equals(true))
+
+        {
+            <h1>Administrator</h1>
+        }
+        else
+        {
+            <h1>Zwykły użytkownik</h1>
+        }
