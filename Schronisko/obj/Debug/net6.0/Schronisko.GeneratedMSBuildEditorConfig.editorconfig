@@ -8,11 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Schronisko
 build_property.RootNamespace = Schronisko
-build_property.ProjectDir = C:\Users\Szymon\Source\Repos\mbielak15121\Schroniskov2\Schronisko\
+build_property.ProjectDir = C:\Users\Szymon\source\repos\mbielak15121\Schroniskov2\Schronisko\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Szymon\Source\Repos\mbielak15121\Schroniskov2\Schronisko
+build_property.MSBuildProjectDirectory = C:\Users\Szymon\source\repos\mbielak15121\Schroniskov2\Schronisko
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Areas/Identity/Pages/Account/AccessDenied.cshtml]
@@ -185,6 +185,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/Ogloszenia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/Ogloszenia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/Ogloszenia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/Ogloszenia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/Ogloszenia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/Privacy.cshtml]

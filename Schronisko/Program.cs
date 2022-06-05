@@ -7,7 +7,8 @@ var connectionString = builder.Configuration.GetConnectionString("SchroniskoCont
 
 builder.Services.AddDbContext<SchroniskoContext>(options =>
     options.UseSqlServer(connectionString));;
-
+builder.Services.AddDbContext<OgloszenieContext>(options =>
+    options.UseSqlServer(connectionString)); ;
 builder.Services.AddDefaultIdentity<SchroniskoUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<SchroniskoContext>();;
 
