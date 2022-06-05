@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\ProjektGit\\Schronisko\\Schronisko.csproj": {}
+    "C:\\Users\\Admin\\Documents\\Git\\Schronisko\\Schronisko\\Schronisko.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\ProjektGit\\Schronisko\\Schronisko.csproj": {
+    "C:\\Users\\Admin\\Documents\\Git\\Schronisko\\Schronisko\\Schronisko.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\ProjektGit\\Schronisko\\Schronisko.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\Git\\Schronisko\\Schronisko\\Schronisko.csproj",
         "projectName": "Schronisko",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\ProjektGit\\Schronisko\\Schronisko.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\Git\\Schronisko\\Schronisko\\Schronisko.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\ProjektGit\\Schronisko\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\Git\\Schronisko\\Schronisko\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

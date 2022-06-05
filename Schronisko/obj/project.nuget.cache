@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lR2NdML5x3YIrs8uEbTG+RAdeau7LZxbiDLXGizTpLskjqwD3fzEVAKvyvcSqwDEMVmOMoyu+ccs3Yta8+sCgg==",
+  "dgSpecHash": "AUmR9aT1ETafouclQDpR2dZ5UqcR8egnjaraaBdH7ez0M14H8szwGPMHB4BbmFcQ3mDtXkgGtpqwLI2wCQTrug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\ProjektGit\\Schronisko\\Schronisko.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\Git\\Schronisko\\Schronisko\\Schronisko.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

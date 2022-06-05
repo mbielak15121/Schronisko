@@ -18,4 +18,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\css\Data\dog-and-cat-header.png" />
+    <None Include="wwwroot\css\Data\logo.jpg" />
+  </ItemGroup>
+
 </Project>

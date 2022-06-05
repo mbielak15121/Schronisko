@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.logo {
+    background: url("Data/logo.jpg");
+    height: 340px;
+}
