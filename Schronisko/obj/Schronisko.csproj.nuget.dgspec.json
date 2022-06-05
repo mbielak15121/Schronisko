@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Szymon\\Source\\Repos\\mbielak15121\\Schroniskov2\\Schronisko\\Schronisko.csproj": {}
+    "C:\\Users\\Admin\\Documents\\Git\\Schronisko\\Schronisko\\Schronisko.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Szymon\\Source\\Repos\\mbielak15121\\Schroniskov2\\Schronisko\\Schronisko.csproj": {
+    "C:\\Users\\Admin\\Documents\\Git\\Schronisko\\Schronisko\\Schronisko.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Szymon\\Source\\Repos\\mbielak15121\\Schroniskov2\\Schronisko\\Schronisko.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\Git\\Schronisko\\Schronisko\\Schronisko.csproj",
         "projectName": "Schronisko",
-        "projectPath": "C:\\Users\\Szymon\\Source\\Repos\\mbielak15121\\Schroniskov2\\Schronisko\\Schronisko.csproj",
-        "packagesPath": "C:\\Users\\Szymon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Szymon\\Source\\Repos\\mbielak15121\\Schroniskov2\\Schronisko\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Documents\\Git\\Schronisko\\Schronisko\\Schronisko.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\Git\\Schronisko\\Schronisko\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Szymon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

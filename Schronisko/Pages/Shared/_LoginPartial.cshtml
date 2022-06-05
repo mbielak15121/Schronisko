@@ -7,6 +7,17 @@
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
+
+    @if(((await UserManager.GetUserAsync(User)).IsAdmin).Equals(true))
+
+        {
+            <a id="manage" class="nav-link text-dark" asp-area="" asp-page="/Ogloszenia/Index" title="Manage">Dodaj ogłoszenie</a>
+        }
+        else
+        {
+            
+        }
+
     <li class="nav-item">
         <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Witaj @((await UserManager.GetUserAsync(User)).FirstName)!</a>
     </li>
