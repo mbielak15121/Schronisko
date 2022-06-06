@@ -15,5 +15,10 @@ namespace Schronisko.Migrations.Ogloszenie
         {
 
         }
+
+        internal static Task<IList<Zaginiecia>> ToListAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

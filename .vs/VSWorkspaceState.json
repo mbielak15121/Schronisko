@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Schronisko",
+    "\\Schronisko\\Pages",
+    "\\Schronisko\\Pages\\PrzegladOgloszen",
+    "\\Schronisko\\Pages\\Shared"
   ],
-  "SelectedNode": "\\Schronisko.sln",
+  "SelectedNode": "\\Schronisko\\Pages\\PrzegladOgloszen\\Index.cshtml.cs",
   "PreviewInSolutionExplorer": false
 }

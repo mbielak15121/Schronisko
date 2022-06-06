@@ -7,6 +7,7 @@ namespace Schronisko.Areas.Identity.Data
     {
         public OgloszenieContext(DbContextOptions options) : base(options) { }
         public DbSet<Ogloszenie> Ogloszenie { get; set; }
-        
+        public DbSet<Zaginiecia> Zaginiecia { get; set; }
+
     }
 }
