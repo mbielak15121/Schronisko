@@ -1,4 +1,4 @@
-﻿@page
+﻿@page 
 @using Microsoft.AspNetCore.Identity
 @using Schronisko.Areas.Identity.Data
 @model Schronisko.Pages.PrzegladOgloszen.IndexModel
@@ -11,7 +11,12 @@
 @if (SignInManager.IsSignedIn(User))
 {
     <h1>Aktualne ogłoszenia</h1>
+    <form>
+        
+        Wpisz frazę:<input type="text" name="SearchString">
+        <input type="submit" value="Filter"/>
 
+    </form>
 
     <table class="table">
         <thead>

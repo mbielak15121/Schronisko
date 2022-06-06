@@ -8,11 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Schronisko
 build_property.RootNamespace = Schronisko
-build_property.ProjectDir = C:\Users\Szymon\source\repos\mbielak15121\Schroniskov2\Schronisko\
+build_property.ProjectDir = C:\Users\Szymon\Source\Repos\mbielak15121\Schroniskov2\Schronisko\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Szymon\source\repos\mbielak15121\Schroniskov2\Schronisko
+build_property.MSBuildProjectDirectory = C:\Users\Szymon\Source\Repos\mbielak15121\Schroniskov2\Schronisko
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Areas/Identity/Pages/Account/AccessDenied.cshtml]

@@ -10,6 +10,7 @@ using Schronisko.Models;
 
 namespace Schronisko.Pages.PrzegladOgloszen
 {
+
     public class IndexModel : PageModel
     {
         private readonly Schronisko.Areas.Identity.Data.OgloszenieContext _context;
@@ -21,12 +22,17 @@ namespace Schronisko.Pages.PrzegladOgloszen
 
         public IList<Ogloszenie> Ogloszenie { get;set; } = default!;
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(string searchString)
         {
-            if (_context.Ogloszenie != null)
+            var ogloszenia = from m in _context.Ogloszenie select m;
+            
+            if (!String.IsNullOrEmpty(searchString))
             {
-                Ogloszenie = await _context.Ogloszenie.ToListAsync();
+                
+                ogloszenia = ogloszenia.Where(s => s.Rasa.Contains(searchString));
+                ogloszenia = ogloszenia.OrderByDescending(s => s.Id);
             }
+          Ogloszenie=await ogloszenia.ToListAsync();
         }
     }
 }
