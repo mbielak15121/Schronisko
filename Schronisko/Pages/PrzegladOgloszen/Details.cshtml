@@ -1,5 +1,5 @@
 ﻿@page
-@model Schronisko.Pages.Ogloszenia.DetailsModel
+@model Schronisko.Pages.PrzegladOgloszen.DetailsModel
 
 @{
     ViewData["Title"] = "Details";
@@ -41,6 +41,12 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Ogloszenie.Opis)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogloszenie.Zdjecie)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ogloszenie.Zdjecie)
         </dd>
     </dl>
 </div>

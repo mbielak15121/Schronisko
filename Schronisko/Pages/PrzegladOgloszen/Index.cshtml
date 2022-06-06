@@ -1,0 +1,75 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@using Schronisko.Areas.Identity.Data
+@model Schronisko.Pages.PrzegladOgloszen.IndexModel
+@inject SignInManager<SchroniskoUser> SignInManager
+@inject UserManager<SchroniskoUser> UserManager
+@{
+    ViewData["Title"] = "Ogłoszenia";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+@if (SignInManager.IsSignedIn(User))
+{
+    <h1>Aktualne ogłoszenia</h1>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ogloszenie[0].Gatunek)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ogloszenie[0].Imie)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ogloszenie[0].Rasa)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ogloszenie[0].Wiek)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ogloszenie[0].Opis)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ogloszenie[0].Zdjecie)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Ogloszenie)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Gatunek)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Imie)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Rasa)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Wiek)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Opis)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Zdjecie)
+                    </td>
+                    <td>
+
+                        <a asp-page="./Details" asp-route-id="@item.Id">Szczegóły</a> 
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h1>Brak dostępu</h1>
+}
