@@ -1,8 +1,8 @@
 ﻿@page
-@model Schronisko.Pages.Zaginiecie.DetailsModel
+@model Schronisko.Pages.ZaginieciaAdmin.DetailsModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Zaginięcia";
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
@@ -30,10 +30,21 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Zaginiecia.Zdjecie)
         </dd>
-        
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Zaginiecia.Zaakceptowane)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Zaginiecia.Zaakceptowane)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Zaginiecia.Aktualne)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Zaginiecia.Aktualne)
+        </dd>
     </dl>
 </div>
 <div>
-   
-    <a asp-page="../Index" class="btn btn-info">Powrót</a>
+    <a asp-page="./Edit" asp-route-id="@Model.Zaginiecia?.Id">Edit</a> |
+    <a asp-page="./Index">Powrót</a>
 </div>

@@ -4,6 +4,9 @@
     ViewData["Title"] = "Strona Główna";
 }
 <p>
+            <a asp-page="./Zaginiecie/Create" class="btn btn-danger">Zgłoś zaginięcie</a>
+        </p>
+<p>
     Aktualne zaginięcia
 </p>
 <table class="table">
@@ -18,12 +21,8 @@
             <th>
                 @Html.DisplayNameFor(model => model.Zaginiecia[0].Zdjecie)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zaginiecia[0].Zaakceptowane)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zaginiecia[0].Aktualne)
-            </th>
+            
+            
             <th></th>
         </tr>
     </thead>
@@ -39,15 +38,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Zdjecie)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Zaakceptowane)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Aktualne)
-            </td>
+           
             <td>
                 
-                <a asp-page="./Zaginiecie/Details" asp-route-id="@item.Id">Szczegóły</a> 
+                <a asp-page="./Zaginiecie/Details" class="btn btn-info" asp-route-id="@item.Id">Szczegóły</a> 
                
             </td>
         </tr>

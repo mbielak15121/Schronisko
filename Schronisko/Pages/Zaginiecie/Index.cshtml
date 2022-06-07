@@ -23,12 +23,8 @@
             <th>
                 @Html.DisplayNameFor(model => model.Zaginiecia[0].Zdjecie)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zaginiecia[0].Zaakceptowane)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Zaginiecia[0].Aktualne)
-            </th>
+            
+           
             <th></th>
         </tr>
     </thead>
@@ -44,17 +40,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Zdjecie)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Zaakceptowane)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Aktualne)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
+            
+            
+          
         </tr>
 }
     </tbody>

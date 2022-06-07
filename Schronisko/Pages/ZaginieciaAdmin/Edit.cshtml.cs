@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Schronisko.Areas.Identity.Data;
 using Schronisko.Models;
 
-namespace Schronisko.Pages.Zaginiecie
+namespace Schronisko.Pages.ZaginieciaAdmin
 {
     public class EditModel : PageModel
     {

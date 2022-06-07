@@ -227,6 +227,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/ZaginieciaAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWmFnaW5pZWNpYUFkbWluXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/ZaginieciaAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWmFnaW5pZWNpYUFkbWluXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/ZaginieciaAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWmFnaW5pZWNpYUFkbWluXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/ZaginieciaAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWmFnaW5pZWNpYUFkbWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/ZaginieciaFormularz/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWmFnaW5pZWNpYUZvcm11bGFyelxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -235,16 +251,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWmFnaW5pZWNpZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/Zaginiecie/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWmFnaW5pZWNpZVxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/Zaginiecie/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWmFnaW5pZWNpZVxEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/Zaginiecie/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWmFnaW5pZWNpZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Szymon/Source/Repos/mbielak15121/Schroniskov2/Schronisko/Pages/Zaginiecie/Index.cshtml]
