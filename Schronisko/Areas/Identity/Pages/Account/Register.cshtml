@@ -1,7 +1,7 @@
 ﻿@page
 @model RegisterModel
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Rejestracja";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -42,15 +42,17 @@
     </div>
     <div class="col-md-6 col-md-offset-2">
         <section>
-            <h3>Use another service to register.</h3>
+            <h3><p style="text-align: center">Witamy w schronisku</p></h3>
             <hr />
             @{
                 if ((Model.ExternalLogins?.Count ?? 0) == 0)
                 {
                     <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
+                        <p>Opiekujemy się zwierzętami mającymi szczególne potrzeby. Psy mieszkające w schronisku żyją w stresie, w dużym skupisku, w
+                                którym łatwiej przenoszą się choroby. Niektóre z nich są chore albo przechodzą rekonwalescencję po wypadkach. Musimy im dawać karmę dobrej jakości, ponieważ ta gorsza, najtańsza, im nie służy.<br><br> 
+
+                                Dlatego jeśli chcecie pomóc, kupcie im dobrą karmę. Wybierzcie coś z dużą zawartością mięsa. Nie martwcie się, że
+                                przynosicie dwie puszki zamiast 10-kilogramowego worka, który kupilibyście w tej samej cenie. Znamy ceny karm i docenimy to, że pomagacie mądrze.               
                         </p>
                     </div>
                 }

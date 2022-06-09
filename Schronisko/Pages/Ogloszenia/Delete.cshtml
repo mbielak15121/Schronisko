@@ -2,15 +2,15 @@
 @model Schronisko.Pages.Ogloszenia.DeleteModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Usuń";
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-<h1>Delete</h1>
+<h1>Usuń</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Czy jesteś pewny, że chcesz to usunąć?</h3>
 <div>
-    <h4>Ogloszenie</h4>
+    <h4>Ogłoszenie</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -41,7 +41,7 @@
     
     <form method="post">
         <input type="hidden" asp-for="Ogloszenie.Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-page="./Index">Back to List</a>
+        <input type="submit" value="Usuń" class="btn btn-danger" /> |
+        <a asp-page="./Index">Wróć do listy</a>
     </form>
 </div>

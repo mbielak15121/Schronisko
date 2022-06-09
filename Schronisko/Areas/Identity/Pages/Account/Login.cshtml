@@ -2,7 +2,7 @@
 @model LoginModel
 
 @{
-    ViewData["Title"] = "Log in";
+    ViewData["Title"] = "Logowanie";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -10,7 +10,7 @@
     <div class="col-md-4">
         <section>
             <form id="account" method="post">
-                <h2>Use a local account to log in.</h2>
+                <h2>Użyj swojego konta by się zalogować</h2>
                 <hr />
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-floating">
@@ -32,17 +32,17 @@
                     </div>
                 </div>
                 <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Zaloguj się</button>
                 </div>
                 <div>
                     <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                        <a id="forgot-password" asp-page="./ForgotPassword">Zapomniałeś hasła?</a>
                     </p>
                     <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Zarejestruj się</a>
                     </p>
                     <p>
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Wyślij ponownie potwierdzenie email</a>
                     </p>
                 </div>
             </form>
@@ -50,15 +50,17 @@
     </div>
     <div class="col-md-6 col-md-offset-2">
         <section>
-            <h3>Use another service to log in.</h3>
+            <h3><p style="text-align: center">Witamy w schronisku</p></h3>
             <hr />
             @{
                 if ((Model.ExternalLogins?.Count ?? 0) == 0)
                 {
                     <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
+                        <p>Opiekujemy się zwierzętami mającymi szczególne potrzeby. Psy mieszkające w schronisku żyją w stresie, w dużym skupisku, w
+                           którym łatwiej przenoszą się choroby. Niektóre z nich są chore albo przechodzą rekonwalescencję po wypadkach. Musimy im dawać karmę dobrej jakości, ponieważ ta gorsza, najtańsza, im nie służy.<br><br> 
+
+                           Dlatego jeśli chcecie pomóc, kupcie im dobrą karmę. Wybierzcie coś z dużą zawartością mięsa. Nie martwcie się, że
+                           przynosicie dwie puszki zamiast 10-kilogramowego worka, który kupilibyście w tej samej cenie. Znamy ceny karm i docenimy to, że pomagacie mądrze.
                         </p>
                     </div>
                 }
