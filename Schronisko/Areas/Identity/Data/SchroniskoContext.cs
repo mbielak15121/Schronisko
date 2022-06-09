@@ -6,7 +6,7 @@ using Schronisko.Areas.Identity.Data;
 
 namespace Schronisko.Data;
 
-public class SchroniskoContext : IdentityDbContext<SchroniskoUser>
+public class SchroniskoContext : IdentityDbContext<SchroniskoUsers>
 {
     public SchroniskoContext(DbContextOptions<SchroniskoContext> options)
         : base(options)
@@ -24,12 +24,13 @@ public class SchroniskoContext : IdentityDbContext<SchroniskoUser>
     }
 }
 
-public class ApplicationUserEntityConfiguration : IEntityTypeConfiguration<SchroniskoUser>
+public class ApplicationUserEntityConfiguration : IEntityTypeConfiguration<SchroniskoUsers>
 {
-    void IEntityTypeConfiguration<SchroniskoUser>.Configure(EntityTypeBuilder<SchroniskoUser> builder)
+    void IEntityTypeConfiguration<SchroniskoUsers>.Configure(EntityTypeBuilder<SchroniskoUsers> builder)
     {
         builder.Property(u => u.FirstName).HasMaxLength(255);
         builder.Property(u => u.LastName).HasMaxLength(255);
         builder.Property(u => u.IsAdmin).HasDefaultValue(false);
+        builder.Property(u => u.IsWolontariusz).HasDefaultValue(false);
     }
 }

@@ -9,7 +9,7 @@ builder.Services.AddDbContext<SchroniskoContext>(options =>
     options.UseSqlServer(connectionString));;
 builder.Services.AddDbContext<OgloszenieContext>(options =>
     options.UseSqlServer(connectionString));;
-builder.Services.AddDefaultIdentity<SchroniskoUser>(options => options.SignIn.RequireConfirmedAccount = false)
+builder.Services.AddDefaultIdentity<SchroniskoUsers>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<SchroniskoContext>();;
 
 // Add services to the container.

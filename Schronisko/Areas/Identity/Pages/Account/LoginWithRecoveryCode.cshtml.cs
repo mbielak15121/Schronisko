@@ -15,13 +15,13 @@ namespace Schronisko.Areas.Identity.Pages.Account
 {
     public class LoginWithRecoveryCodeModel : PageModel
     {
-        private readonly SignInManager<SchroniskoUser> _signInManager;
-        private readonly UserManager<SchroniskoUser> _userManager;
+        private readonly SignInManager<SchroniskoUsers> _signInManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
         private readonly ILogger<LoginWithRecoveryCodeModel> _logger;
 
         public LoginWithRecoveryCodeModel(
-            SignInManager<SchroniskoUser> signInManager,
-            UserManager<SchroniskoUser> userManager,
+            SignInManager<SchroniskoUsers> signInManager,
+            UserManager<SchroniskoUsers> userManager,
             ILogger<LoginWithRecoveryCodeModel> logger)
         {
             _signInManager = signInManager;

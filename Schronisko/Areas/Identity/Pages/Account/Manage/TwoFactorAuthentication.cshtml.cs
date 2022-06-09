@@ -14,12 +14,12 @@ namespace Schronisko.Areas.Identity.Pages.Account.Manage
 {
     public class TwoFactorAuthenticationModel : PageModel
     {
-        private readonly UserManager<SchroniskoUser> _userManager;
-        private readonly SignInManager<SchroniskoUser> _signInManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
+        private readonly SignInManager<SchroniskoUsers> _signInManager;
         private readonly ILogger<TwoFactorAuthenticationModel> _logger;
 
         public TwoFactorAuthenticationModel(
-            UserManager<SchroniskoUser> userManager, SignInManager<SchroniskoUser> signInManager, ILogger<TwoFactorAuthenticationModel> logger)
+            UserManager<SchroniskoUsers> userManager, SignInManager<SchroniskoUsers> signInManager, ILogger<TwoFactorAuthenticationModel> logger)
         {
             _userManager = userManager;
             _signInManager = signInManager;

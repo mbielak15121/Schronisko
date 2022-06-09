@@ -17,9 +17,9 @@ namespace Schronisko.Areas.Identity.Pages.Account
 {
     public class ConfirmEmailModel : PageModel
     {
-        private readonly UserManager<SchroniskoUser> _userManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
 
-        public ConfirmEmailModel(UserManager<SchroniskoUser> userManager)
+        public ConfirmEmailModel(UserManager<SchroniskoUsers> userManager)
         {
             _userManager = userManager;
         }

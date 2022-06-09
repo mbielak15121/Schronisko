@@ -159,7 +159,7 @@ namespace Schronisko.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Schronisko.Areas.Identity.Data.SchroniskoUser", b =>
+            modelBuilder.Entity("Schronisko.Areas.Identity.Data.SchroniskoUsers", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -184,6 +184,11 @@ namespace Schronisko.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<bool>("IsAdmin")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<bool>("IsWolontariusz")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
                         .HasDefaultValue(false);
@@ -250,7 +255,7 @@ namespace Schronisko.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Schronisko.Areas.Identity.Data.SchroniskoUser", null)
+                    b.HasOne("Schronisko.Areas.Identity.Data.SchroniskoUsers", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -259,7 +264,7 @@ namespace Schronisko.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Schronisko.Areas.Identity.Data.SchroniskoUser", null)
+                    b.HasOne("Schronisko.Areas.Identity.Data.SchroniskoUsers", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -274,7 +279,7 @@ namespace Schronisko.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Schronisko.Areas.Identity.Data.SchroniskoUser", null)
+                    b.HasOne("Schronisko.Areas.Identity.Data.SchroniskoUsers", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -283,7 +288,7 @@ namespace Schronisko.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Schronisko.Areas.Identity.Data.SchroniskoUser", null)
+                    b.HasOne("Schronisko.Areas.Identity.Data.SchroniskoUsers", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

@@ -18,11 +18,11 @@ namespace Schronisko.Areas.Identity.Pages.Account.Manage
 {
     public class DownloadPersonalDataModel : PageModel
     {
-        private readonly UserManager<SchroniskoUser> _userManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
         private readonly ILogger<DownloadPersonalDataModel> _logger;
 
         public DownloadPersonalDataModel(
-            UserManager<SchroniskoUser> userManager,
+            UserManager<SchroniskoUsers> userManager,
             ILogger<DownloadPersonalDataModel> logger)
         {
             _userManager = userManager;
@@ -46,7 +46,7 @@ namespace Schronisko.Areas.Identity.Pages.Account.Manage
 
             // Only include personal data for download
             var personalData = new Dictionary<string, string>();
-            var personalDataProps = typeof(SchroniskoUser).GetProperties().Where(
+            var personalDataProps = typeof(SchroniskoUsers).GetProperties().Where(
                             prop => Attribute.IsDefined(prop, typeof(PersonalDataAttribute)));
             foreach (var p in personalDataProps)
             {

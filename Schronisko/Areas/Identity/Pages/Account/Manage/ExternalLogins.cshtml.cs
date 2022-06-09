@@ -17,14 +17,14 @@ namespace Schronisko.Areas.Identity.Pages.Account.Manage
 {
     public class ExternalLoginsModel : PageModel
     {
-        private readonly UserManager<SchroniskoUser> _userManager;
-        private readonly SignInManager<SchroniskoUser> _signInManager;
-        private readonly IUserStore<SchroniskoUser> _userStore;
+        private readonly UserManager<SchroniskoUsers> _userManager;
+        private readonly SignInManager<SchroniskoUsers> _signInManager;
+        private readonly IUserStore<SchroniskoUsers> _userStore;
 
         public ExternalLoginsModel(
-            UserManager<SchroniskoUser> userManager,
-            SignInManager<SchroniskoUser> signInManager,
-            IUserStore<SchroniskoUser> userStore)
+            UserManager<SchroniskoUsers> userManager,
+            SignInManager<SchroniskoUsers> signInManager,
+            IUserStore<SchroniskoUsers> userStore)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -70,7 +70,7 @@ namespace Schronisko.Areas.Identity.Pages.Account.Manage
                 .ToList();
 
             string passwordHash = null;
-            if (_userStore is IUserPasswordStore<SchroniskoUser> userPasswordStore)
+            if (_userStore is IUserPasswordStore<SchroniskoUsers> userPasswordStore)
             {
                 passwordHash = await userPasswordStore.GetPasswordHashAsync(user, HttpContext.RequestAborted);
             }

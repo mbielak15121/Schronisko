@@ -1,7 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using Schronisko.Areas.Identity.Data
-@inject SignInManager<SchroniskoUser> SignInManager
-@inject UserManager<SchroniskoUser> UserManager
+@inject SignInManager<SchroniskoUsers> SignInManager
+@inject UserManager<SchroniskoUsers> UserManager
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,11 +25,9 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Strona Główna</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
+                        
                         @if (SignInManager.IsSignedIn(User))
                         {
                             <li class="nav-item">

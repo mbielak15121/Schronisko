@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Schronisko",
-    "\\Schronisko\\Pages",
-    "\\Schronisko\\Pages\\Shared"
+    "\\Schronisko\\Pages"
   ],
+  "SelectedNode": "\\Schronisko\\Pages\\Index.cshtml.cs",
   "PreviewInSolutionExplorer": false
 }

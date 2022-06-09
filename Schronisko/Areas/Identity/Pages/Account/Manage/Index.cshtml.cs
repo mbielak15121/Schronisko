@@ -15,12 +15,12 @@ namespace Schronisko.Areas.Identity.Pages.Account.Manage
 {
     public class IndexModel : PageModel
     {
-        private readonly UserManager<SchroniskoUser> _userManager;
-        private readonly SignInManager<SchroniskoUser> _signInManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
+        private readonly SignInManager<SchroniskoUsers> _signInManager;
 
         public IndexModel(
-            UserManager<SchroniskoUser> userManager,
-            SignInManager<SchroniskoUser> signInManager)
+            UserManager<SchroniskoUsers> userManager,
+            SignInManager<SchroniskoUsers> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -61,7 +61,7 @@ namespace Schronisko.Areas.Identity.Pages.Account.Manage
             public string PhoneNumber { get; set; }
         }
 
-        private async Task LoadAsync(SchroniskoUser user)
+        private async Task LoadAsync(SchroniskoUsers user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);

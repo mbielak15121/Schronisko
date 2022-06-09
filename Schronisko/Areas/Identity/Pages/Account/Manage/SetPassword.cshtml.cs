@@ -14,12 +14,12 @@ namespace Schronisko.Areas.Identity.Pages.Account.Manage
 {
     public class SetPasswordModel : PageModel
     {
-        private readonly UserManager<SchroniskoUser> _userManager;
-        private readonly SignInManager<SchroniskoUser> _signInManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
+        private readonly SignInManager<SchroniskoUsers> _signInManager;
 
         public SetPasswordModel(
-            UserManager<SchroniskoUser> userManager,
-            SignInManager<SchroniskoUser> signInManager)
+            UserManager<SchroniskoUsers> userManager,
+            SignInManager<SchroniskoUsers> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;

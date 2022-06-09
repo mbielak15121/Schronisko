@@ -18,13 +18,13 @@ namespace Schronisko.Areas.Identity.Pages.Account.Manage
 {
     public class EmailModel : PageModel
     {
-        private readonly UserManager<SchroniskoUser> _userManager;
-        private readonly SignInManager<SchroniskoUser> _signInManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
+        private readonly SignInManager<SchroniskoUsers> _signInManager;
         private readonly IEmailSender _emailSender;
 
         public EmailModel(
-            UserManager<SchroniskoUser> userManager,
-            SignInManager<SchroniskoUser> signInManager,
+            UserManager<SchroniskoUsers> userManager,
+            SignInManager<SchroniskoUsers> signInManager,
             IEmailSender emailSender)
         {
             _userManager = userManager;
@@ -74,7 +74,7 @@ namespace Schronisko.Areas.Identity.Pages.Account.Manage
             public string NewEmail { get; set; }
         }
 
-        private async Task LoadAsync(SchroniskoUser user)
+        private async Task LoadAsync(SchroniskoUsers user)
         {
             var email = await _userManager.GetEmailAsync(user);
             Email = email;

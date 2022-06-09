@@ -18,10 +18,10 @@ namespace Schronisko.Areas.Identity.Pages.Account
     [AllowAnonymous]
     public class RegisterConfirmationModel : PageModel
     {
-        private readonly UserManager<SchroniskoUser> _userManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
         private readonly IEmailSender _sender;
 
-        public RegisterConfirmationModel(UserManager<SchroniskoUser> userManager, IEmailSender sender)
+        public RegisterConfirmationModel(UserManager<SchroniskoUsers> userManager, IEmailSender sender)
         {
             _userManager = userManager;
             _sender = sender;

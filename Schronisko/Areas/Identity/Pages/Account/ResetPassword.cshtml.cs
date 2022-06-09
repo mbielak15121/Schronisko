@@ -17,9 +17,9 @@ namespace Schronisko.Areas.Identity.Pages.Account
 {
     public class ResetPasswordModel : PageModel
     {
-        private readonly UserManager<SchroniskoUser> _userManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
 
-        public ResetPasswordModel(UserManager<SchroniskoUser> userManager)
+        public ResetPasswordModel(UserManager<SchroniskoUsers> userManager)
         {
             _userManager = userManager;
         }

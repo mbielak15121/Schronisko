@@ -24,17 +24,17 @@ namespace Schronisko.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
     {
-        private readonly SignInManager<SchroniskoUser> _signInManager;
-        private readonly UserManager<SchroniskoUser> _userManager;
-        private readonly IUserStore<SchroniskoUser> _userStore;
-        private readonly IUserEmailStore<SchroniskoUser> _emailStore;
+        private readonly SignInManager<SchroniskoUsers> _signInManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
+        private readonly IUserStore<SchroniskoUsers> _userStore;
+        private readonly IUserEmailStore<SchroniskoUsers> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
 
         public RegisterModel(
-            UserManager<SchroniskoUser> userManager,
-            IUserStore<SchroniskoUser> userStore,
-            SignInManager<SchroniskoUser> signInManager,
+            UserManager<SchroniskoUsers> userManager,
+            IUserStore<SchroniskoUsers> userStore,
+            SignInManager<SchroniskoUsers> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender)
         {
@@ -172,27 +172,27 @@ namespace Schronisko.Areas.Identity.Pages.Account
             return Page();
         }
 
-        private SchroniskoUser CreateUser()
+        private SchroniskoUsers CreateUser()
         {
             try
             {
-                return Activator.CreateInstance<SchroniskoUser>();
+                return Activator.CreateInstance<SchroniskoUsers>();
             }
             catch
             {
-                throw new InvalidOperationException($"Can't create an instance of '{nameof(SchroniskoUser)}'. " +
-                    $"Ensure that '{nameof(SchroniskoUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
+                throw new InvalidOperationException($"Can't create an instance of '{nameof(SchroniskoUsers)}'. " +
+                    $"Ensure that '{nameof(SchroniskoUsers)}' is not an abstract class and has a parameterless constructor, or alternatively " +
                     $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
             }
         }
 
-        private IUserEmailStore<SchroniskoUser> GetEmailStore()
+        private IUserEmailStore<SchroniskoUsers> GetEmailStore()
         {
             if (!_userManager.SupportsUserEmail)
             {
                 throw new NotSupportedException("The default UI requires a user store with email support.");
             }
-            return (IUserEmailStore<SchroniskoUser>)_userStore;
+            return (IUserEmailStore<SchroniskoUsers>)_userStore;
         }
     }
 }

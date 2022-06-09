@@ -17,13 +17,13 @@ namespace Schronisko.Areas.Identity.Pages.Account
 {
     public class LoginWith2faModel : PageModel
     {
-        private readonly SignInManager<SchroniskoUser> _signInManager;
-        private readonly UserManager<SchroniskoUser> _userManager;
+        private readonly SignInManager<SchroniskoUsers> _signInManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
         private readonly ILogger<LoginWith2faModel> _logger;
 
         public LoginWith2faModel(
-            SignInManager<SchroniskoUser> signInManager,
-            UserManager<SchroniskoUser> userManager,
+            SignInManager<SchroniskoUsers> signInManager,
+            UserManager<SchroniskoUsers> userManager,
             ILogger<LoginWith2faModel> logger)
         {
             _signInManager = signInManager;

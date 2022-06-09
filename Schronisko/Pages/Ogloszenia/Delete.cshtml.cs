@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Schronisko.Areas.Identity.Data;
 using Schronisko.Models;
 
-namespace Schronisko.Pages.Ogloszenia
+namespace Schronisko.Pages.PrzegladOgloszen
 {
     public class DeleteModel : PageModel
     {

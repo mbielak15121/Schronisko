@@ -15,10 +15,10 @@ namespace Schronisko.Areas.Identity.Pages.Account
 {
     public class LogoutModel : PageModel
     {
-        private readonly SignInManager<SchroniskoUser> _signInManager;
+        private readonly SignInManager<SchroniskoUsers> _signInManager;
         private readonly ILogger<LogoutModel> _logger;
 
-        public LogoutModel(SignInManager<SchroniskoUser> signInManager, ILogger<LogoutModel> logger)
+        public LogoutModel(SignInManager<SchroniskoUsers> signInManager, ILogger<LogoutModel> logger)
         {
             _signInManager = signInManager;
             _logger = logger;

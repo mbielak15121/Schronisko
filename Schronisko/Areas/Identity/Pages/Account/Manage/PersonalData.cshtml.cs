@@ -12,11 +12,11 @@ namespace Schronisko.Areas.Identity.Pages.Account.Manage
 {
     public class PersonalDataModel : PageModel
     {
-        private readonly UserManager<SchroniskoUser> _userManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
         private readonly ILogger<PersonalDataModel> _logger;
 
         public PersonalDataModel(
-            UserManager<SchroniskoUser> userManager,
+            UserManager<SchroniskoUsers> userManager,
             ILogger<PersonalDataModel> logger)
         {
             _userManager = userManager;

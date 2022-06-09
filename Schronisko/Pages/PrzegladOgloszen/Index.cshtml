@@ -2,8 +2,8 @@
 @using Microsoft.AspNetCore.Identity
 @using Schronisko.Areas.Identity.Data
 @model Schronisko.Pages.PrzegladOgloszen.IndexModel
-@inject SignInManager<SchroniskoUser> SignInManager
-@inject UserManager<SchroniskoUser> UserManager
+@inject SignInManager<SchroniskoUsers> SignInManager
+@inject UserManager<SchroniskoUsers> UserManager
 @{
     ViewData["Title"] = "Ogłoszenia";
     Layout = "~/Pages/Shared/_Layout.cshtml";
@@ -70,6 +70,15 @@
                     <td>
 
                         <a asp-page="./Details" class="btn btn-info" asp-route-id="@item.Id">Szczegóły</a> 
+                       @if (SignInManager.IsSignedIn(User))
+{
+                        @if(((await UserManager.GetUserAsync(User)).IsAdmin).Equals(true))
+
+                        {
+                           <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger">Usuń</a>
+                               
+                        }
+}
 
                     </td>
                 </tr>

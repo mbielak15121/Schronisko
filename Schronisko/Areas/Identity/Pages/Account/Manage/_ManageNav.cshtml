@@ -1,4 +1,4 @@
-﻿@inject SignInManager<SchroniskoUser> SignInManager
+﻿@inject SignInManager<SchroniskoUsers> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
 }

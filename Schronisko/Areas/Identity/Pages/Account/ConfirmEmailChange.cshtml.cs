@@ -16,10 +16,10 @@ namespace Schronisko.Areas.Identity.Pages.Account
 {
     public class ConfirmEmailChangeModel : PageModel
     {
-        private readonly UserManager<SchroniskoUser> _userManager;
-        private readonly SignInManager<SchroniskoUser> _signInManager;
+        private readonly UserManager<SchroniskoUsers> _userManager;
+        private readonly SignInManager<SchroniskoUsers> _signInManager;
 
-        public ConfirmEmailChangeModel(UserManager<SchroniskoUser> userManager, SignInManager<SchroniskoUser> signInManager)
+        public ConfirmEmailChangeModel(UserManager<SchroniskoUsers> userManager, SignInManager<SchroniskoUsers> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
