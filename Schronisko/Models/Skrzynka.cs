@@ -2,7 +2,7 @@
 
 namespace Schronisko.Models
 {
-    public class Skrzynka
+    public class Wiadomosci
     {
         [Key]
         public int Id { get; set; }

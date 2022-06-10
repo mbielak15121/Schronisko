@@ -12,9 +12,9 @@ namespace Schronisko.Pages.ZaginieciaFormularz
 {
     public class CreateModel : PageModel
     {
-        private readonly Schronisko.Areas.Identity.Data.OgloszenieContext _context;
+        private readonly Schronisko.Areas.Identity.Data.SchroniskoContext _context;
 
-        public CreateModel(Schronisko.Areas.Identity.Data.OgloszenieContext context)
+        public CreateModel(Schronisko.Areas.Identity.Data.SchroniskoContext context)
         {
             _context = context;
         }

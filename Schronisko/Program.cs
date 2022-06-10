@@ -5,12 +5,12 @@ using Schronisko.Data;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("SchroniskoContextConnection") ?? throw new InvalidOperationException("Connection string 'SchroniskoContextConnection' not found.");
 
-builder.Services.AddDbContext<SchroniskoContext>(options =>
+builder.Services.AddDbContext<global::Schronisko.Data.SchroniskoContext>((global::Microsoft.EntityFrameworkCore.DbContextOptionsBuilder options) =>
     options.UseSqlServer(connectionString));;
-builder.Services.AddDbContext<OgloszenieContext>(options =>
+builder.Services.AddDbContext<global::Schronisko.Areas.Identity.Data.SchroniskoContext>((global::Microsoft.EntityFrameworkCore.DbContextOptionsBuilder options) =>
     options.UseSqlServer(connectionString));;
-builder.Services.AddDefaultIdentity<SchroniskoUsers>(options => options.SignIn.RequireConfirmedAccount = false)
-    .AddEntityFrameworkStores<SchroniskoContext>();;
+builder.Services.AddDefaultIdentity<SchroniskoUsers>((IdentityOptions options) => options.SignIn.RequireConfirmedAccount = false)
+    .AddEntityFrameworkStores<Schronisko.Data.SchroniskoContext>();;
 
 // Add services to the container.
 builder.Services.AddRazorPages();

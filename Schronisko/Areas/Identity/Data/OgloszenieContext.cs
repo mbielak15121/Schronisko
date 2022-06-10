@@ -3,12 +3,13 @@ using Schronisko.Models;
 
 namespace Schronisko.Areas.Identity.Data
 {
-    public class OgloszenieContext: DbContext
+    public class SchroniskoContext: DbContext
     {
-        public OgloszenieContext(DbContextOptions options) : base(options) { }
+        public SchroniskoContext(DbContextOptions options) : base(options) { }
         public DbSet<Ogloszenie> Ogloszenie { get; set; }
         public DbSet<Zaginiecia> Zaginiecia { get; set; }
 
-        public DbSet<Skrzynka> Skrzynka { get; set; }
+        public DbSet<Wiadomosci> Wiadomosci { get; set; }
+       
     }
 }

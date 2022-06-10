@@ -9,7 +9,7 @@ using Schronisko.Areas.Identity.Data;
 
 namespace Schronisko.Migrations.Ogloszenie
 {
-    [DbContext(typeof(OgloszenieContext))]
+    [DbContext(typeof(SchroniskoContext))]
     partial class OgloszenieContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

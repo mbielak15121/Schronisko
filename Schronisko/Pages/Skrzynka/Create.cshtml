@@ -1,0 +1,48 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@using Schronisko.Areas.Identity.Data
+@model Schronisko.Pages.Skrzynka.CreateModel
+@inject SignInManager<SchroniskoUsers> SignInManager
+@inject UserManager<SchroniskoUsers> UserManager
+@{
+    ViewData["Title"] = "Wyślij Wiadomość";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
+
+<h4>Wiadomosci</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+                
+                <input type="hidden" asp-for="Wiadomosci.Nadawca" class="form-control" value=@((await UserManager.GetUserAsync(User)).Email) />
+               
+          
+            <div class="form-group">
+                Email:<label asp-for="Wiadomosci.Odbiorca" class="control-label"></label>
+                <input asp-for="Wiadomosci.Odbiorca" class="form-control" />
+                <span asp-validation-for="Wiadomosci.Odbiorca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Wiadomosci.Tresc" class="control-label"></label>
+                <input asp-for="Wiadomosci.Tresc" class="form-control" />
+                <span asp-validation-for="Wiadomosci.Tresc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

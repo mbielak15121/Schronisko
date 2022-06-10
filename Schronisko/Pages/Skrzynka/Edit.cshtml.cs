@@ -9,33 +9,33 @@ using Microsoft.EntityFrameworkCore;
 using Schronisko.Areas.Identity.Data;
 using Schronisko.Models;
 
-namespace Schronisko.Pages.Zaginiecie
+namespace Schronisko.Pages.Skrzynka
 {
     public class EditModel : PageModel
     {
-        private readonly SchroniskoContext _context;
+        private readonly Schronisko.Areas.Identity.Data.SchroniskoContext _context;
 
-        public EditModel(SchroniskoContext context)
+        public EditModel(Schronisko.Areas.Identity.Data.SchroniskoContext context)
         {
             _context = context;
         }
 
         [BindProperty]
-        public Zaginiecia Zaginiecia { get; set; } = default!;
+        public Wiadomosci Wiadomosci { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Zaginiecia == null)
+            if (id == null || _context.Wiadomosci == null)
             {
                 return NotFound();
             }
 
-            var zaginiecia = await _context.Zaginiecia.FirstOrDefaultAsync(m => m.Id == id);
-            if (zaginiecia == null)
+            var wiadomosci =  await _context.Wiadomosci.FirstOrDefaultAsync(m => m.Id == id);
+            if (wiadomosci == null)
             {
                 return NotFound();
             }
-            Zaginiecia = zaginiecia;
+            Wiadomosci = wiadomosci;
             return Page();
         }
 
@@ -48,7 +48,7 @@ namespace Schronisko.Pages.Zaginiecie
                 return Page();
             }
 
-            _context.Attach(Zaginiecia).State = EntityState.Modified;
+            _context.Attach(Wiadomosci).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +56,7 @@ namespace Schronisko.Pages.Zaginiecie
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ZaginieciaExists(Zaginiecia.Id))
+                if (!WiadomosciExists(Wiadomosci.Id))
                 {
                     return NotFound();
                 }
@@ -69,9 +69,9 @@ namespace Schronisko.Pages.Zaginiecie
             return RedirectToPage("./Index");
         }
 
-        private bool ZaginieciaExists(int id)
+        private bool WiadomosciExists(int id)
         {
-            return (_context.Zaginiecia?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Wiadomosci?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

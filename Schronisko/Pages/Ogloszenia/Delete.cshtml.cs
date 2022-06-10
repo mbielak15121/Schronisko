@@ -12,9 +12,9 @@ namespace Schronisko.Pages.PrzegladOgloszen
 {
     public class DeleteModel : PageModel
     {
-        private readonly Schronisko.Areas.Identity.Data.OgloszenieContext _context;
+        private readonly Schronisko.Areas.Identity.Data.SchroniskoContext _context;
 
-        public DeleteModel(Schronisko.Areas.Identity.Data.OgloszenieContext context)
+        public DeleteModel(Schronisko.Areas.Identity.Data.SchroniskoContext context)
         {
             _context = context;
         }

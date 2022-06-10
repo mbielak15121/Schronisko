@@ -13,8 +13,8 @@ namespace Schronisko.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        private readonly Schronisko.Areas.Identity.Data.OgloszenieContext _context;
-        public IndexModel(Schronisko.Areas.Identity.Data.OgloszenieContext context)
+        private readonly Schronisko.Areas.Identity.Data.SchroniskoContext _context;
+        public IndexModel(Schronisko.Areas.Identity.Data.SchroniskoContext context)
         {
             _context = context;
         }

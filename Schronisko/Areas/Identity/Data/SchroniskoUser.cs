@@ -14,6 +14,6 @@ public class SchroniskoUsers : IdentityUser
     public string LastName { get; set; }
 
     public bool IsAdmin { get; set; }
-    public bool IsWolontariusz { get; set; }
+   
 }
 

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Schronisko.Areas.Identity.Data;
 using Schronisko.Models;
 
-namespace Schronisko.Pages.Ogloszenia
+namespace Schronisko.Pages.Skrzynka
 {
     public class CreateModel : PageModel
     {
@@ -25,18 +25,18 @@ namespace Schronisko.Pages.Ogloszenia
         }
 
         [BindProperty]
-        public Ogloszenie Ogloszenie { get; set; } = default!;
+        public Wiadomosci Wiadomosci { get; set; } = default!;
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Ogloszenie == null || Ogloszenie == null)
+          if (!ModelState.IsValid || _context.Wiadomosci == null || Wiadomosci == null)
             {
                 return Page();
             }
 
-            _context.Ogloszenie.Add(Ogloszenie);
+            _context.Wiadomosci.Add(Wiadomosci);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

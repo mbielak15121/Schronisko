@@ -1,0 +1,52 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity
+@using Schronisko.Areas.Identity.Data
+@model Schronisko.Pages.Skrzynka.IndexModel
+@inject SignInManager<SchroniskoUsers> SignInManager
+@inject UserManager<SchroniskoUsers> UserManager
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Skrzynka Odbiorcza</h1>
+
+<p>
+    <a class="btn btn-primary" asp-page="Create">Utwórz nową wiadomość</a>
+</p>
+
+  
+
+    
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Wiadomosci[0].Nadawca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wiadomosci[0].Tresc)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Wiadomosci) {
+        <tr>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Nadawca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tresc)
+            </td>
+            <td>
+                
+                <a asp-page="./Delete" asp-route-id="@item.Id">Usuń</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

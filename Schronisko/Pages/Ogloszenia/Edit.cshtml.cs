@@ -13,9 +13,9 @@ namespace Schronisko.Pages.Ogloszenia
 {
     public class EditModel : PageModel
     {
-        private readonly Schronisko.Areas.Identity.Data.OgloszenieContext _context;
+        private readonly Schronisko.Areas.Identity.Data.SchroniskoContext _context;
 
-        public EditModel(Schronisko.Areas.Identity.Data.OgloszenieContext context)
+        public EditModel(Schronisko.Areas.Identity.Data.SchroniskoContext context)
         {
             _context = context;
         }

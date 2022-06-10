@@ -31,6 +31,6 @@ public class ApplicationUserEntityConfiguration : IEntityTypeConfiguration<Schro
         builder.Property(u => u.FirstName).HasMaxLength(255);
         builder.Property(u => u.LastName).HasMaxLength(255);
         builder.Property(u => u.IsAdmin).HasDefaultValue(false);
-        builder.Property(u => u.IsWolontariusz).HasDefaultValue(false);
+       
     }
 }

@@ -10,7 +10,7 @@ using Schronisko.Areas.Identity.Data;
 
 namespace Schronisko.Migrations.Ogloszenie
 {
-    [DbContext(typeof(OgloszenieContext))]
+    [DbContext(typeof(SchroniskoContext))]
     [Migration("20220606122927_Zaginiecia")]
     partial class Zaginiecia
     {

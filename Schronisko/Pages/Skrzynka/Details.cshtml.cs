@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Schronisko.Areas.Identity.Data;
 using Schronisko.Models;
 
-namespace Schronisko.Pages.PrzegladOgloszen
+namespace Schronisko.Pages.Skrzynka
 {
     public class DetailsModel : PageModel
     {
@@ -19,23 +19,23 @@ namespace Schronisko.Pages.PrzegladOgloszen
             _context = context;
         }
 
-      public Ogloszenie Ogloszenie { get; set; } = default!; 
+      public Wiadomosci Wiadomosci { get; set; } = default!; 
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Ogloszenie == null)
+            if (id == null || _context.Wiadomosci == null)
             {
                 return NotFound();
             }
 
-            var ogloszenie = await _context.Ogloszenie.FirstOrDefaultAsync(m => m.Id == id);
-            if (ogloszenie == null)
+            var wiadomosci = await _context.Wiadomosci.FirstOrDefaultAsync(m => m.Id == id);
+            if (wiadomosci == null)
             {
                 return NotFound();
             }
             else 
             {
-                Ogloszenie = ogloszenie;
+                Wiadomosci = wiadomosci;
             }
             return Page();
         }

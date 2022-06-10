@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Schronisko.Areas.Identity.Data;
 using Schronisko.Models;
 
-namespace Schronisko.Pages.Ogloszenia
+namespace Schronisko.Pages.Skrzynka
 {
     public class DeleteModel : PageModel
     {
@@ -20,40 +20,40 @@ namespace Schronisko.Pages.Ogloszenia
         }
 
         [BindProperty]
-      public Ogloszenie Ogloszenie { get; set; } = default!;
+      public Wiadomosci Wiadomosci { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Ogloszenie == null)
+            if (id == null || _context.Wiadomosci == null)
             {
                 return NotFound();
             }
 
-            var ogloszenie = await _context.Ogloszenie.FirstOrDefaultAsync(m => m.Id == id);
+            var wiadomosci = await _context.Wiadomosci.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (ogloszenie == null)
+            if (wiadomosci == null)
             {
                 return NotFound();
             }
             else 
             {
-                Ogloszenie = ogloszenie;
+                Wiadomosci = wiadomosci;
             }
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context.Ogloszenie == null)
+            if (id == null || _context.Wiadomosci == null)
             {
                 return NotFound();
             }
-            var ogloszenie = await _context.Ogloszenie.FindAsync(id);
+            var wiadomosci = await _context.Wiadomosci.FindAsync(id);
 
-            if (ogloszenie != null)
+            if (wiadomosci != null)
             {
-                Ogloszenie = ogloszenie;
-                _context.Ogloszenie.Remove(Ogloszenie);
+                Wiadomosci = wiadomosci;
+                _context.Wiadomosci.Remove(Wiadomosci);
                 await _context.SaveChangesAsync();
             }
 

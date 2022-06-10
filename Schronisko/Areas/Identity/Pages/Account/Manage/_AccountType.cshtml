@@ -8,10 +8,6 @@
 
         {
             <h1>Administrator</h1>
-        }
-        else @if(((await UserManager.GetUserAsync(User)).IsWolontariusz).Equals(true))
-        {
-            <h1>Wolontariusz</h1>
         }else{
             <h1>Zwykły użytkownik</h1>
         }
