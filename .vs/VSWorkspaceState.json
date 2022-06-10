@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Schronisko",
+    "\\Schronisko\\Pages",
+    "\\Schronisko\\Pages\\Użytkownicy"
   ],
-  "SelectedNode": "\\Schronisko.sln",
+  "SelectedNode": "\\Schronisko\\Pages\\Użytkownicy\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }
