@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Schronisko",
-    "\\Schronisko\\Areas",
-    "\\Schronisko\\Areas\\Identity",
-    "\\Schronisko\\Areas\\Identity\\Data",
-    "\\Schronisko\\Models"
+    ""
   ],
-  "SelectedNode": "\\Schronisko\\Models\\SchroniskoUser.cs",
+  "SelectedNode": "\\Schronisko.sln",
   "PreviewInSolutionExplorer": false
 }

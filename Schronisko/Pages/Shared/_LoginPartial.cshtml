@@ -8,7 +8,7 @@
 @if (SignInManager.IsSignedIn(User))
 {
     
-    <a id="manage" class="nav-link text-dark" asp-area="" asp-page="/Skrzynka/Index" title="Manage">Wiadomości</a>
+
     @if(((await UserManager.GetUserAsync(User)).IsAdmin).Equals(true))
 
         {
